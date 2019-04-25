@@ -1,0 +1,150 @@
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@main-text-color: #424242;
+@main-text-size: 18px;
+@header-text-size: 40px;
+@bg-color: #f9fafc;
+@header-color: #2196f3;
+@link-color: #2196f3;
+@inline-code-color: #e91e63;
+@code-background-color: #eee;
+@code-text-size: 14px;
+@border-radius: 10px;
+@shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@hazy-text-color: #888;
+@hazy-text-size: 14px;
+@scale-const: 0.9;
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: @main-text-size;
+  color: @main-text-color;
+  background-color: @bg-color;
+}
+
+a {
+  color: @link-color;
+}
+
+.blog-header {
+  font-family: 'Jura', sans-serif;
+  text-align: center;
+}
+
+.blog-header > h1 {
+  font-size: @header-text-size;
+  color: @header-color;
+  font-weight: 300;
+}
+
+.el-menu {
+  margin: 0px 20px;
+}
+
+.el-menu-item {
+  text-align: center;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.post-link {
+  text-decoration: none !important;
+  color: @link-color;
+  font-weight: 600;
+  font-size: @main-text-size + 2;
+}
+
+.post-link:hover {
+  text-decoration: none !important;
+}
+
+.post a:not(.post-link) {
+  text-decoration: none !important;
+}
+
+.post a:not(.post-link):hover {
+  text-decoration: underline !important;
+}
+
+.post img {
+  max-width: 80%;
+  border-radius: @border-radius;
+  box-shadow: @shadow;
+  margin: 0 auto;
+  display: block;
+}
+
+.post i {
+  color: @hazy-text-color;
+}
+
+pre {
+  background-color: @code-background-color;
+  font-size: @code-text-size;
+  border-radius: @border-radius;
+  box-shadow: @shadow;
+}
+
+p > code {
+  background-color: @code-background-color;
+  color: @inline-code-color;
+  font-size: @code-text-size;
+  padding: 3px;
+  border-radius: @border-radius;
+}
+
+.el-menu {
+  border-right: none;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.post-date {
+  font-size: @hazy-text-size;
+  color: @hazy-text-color;
+  font-weight: 300;
+}
+
+.post li {
+  list-style-type: circle;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile-image {
+    float: right;
+    max-width: 250px !important;
+    margin-right: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    font-size: @main-text-size * @scale-const;
+  }
+  pre {
+    font-size: @code-text-size * @scale-const;
+  }
+  p > code {
+    font-size: @code-text-size * @scale-const;
+    padding: 3px * @scale-const;
+  }
+  .post-link {
+    font-size: (@main-text-size + 2) * @scale-const;
+  }
+  .post-date {
+    font-size: @hazy-text-size * @scale-const;
+  }
+  .el-menu {
+    margin: 0px;
+  }
+  .el-main {
+    padding: 20px 0px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "prism-themes": "^1.0.1",
+    "prismjs": "^1.15.0"
+  }
+}
