@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  props: ["page"],
+  props: ['page'],
   computed: {
     postsByCategory() {
       let currentPage = this.page ? this.page : this.$page.path;
