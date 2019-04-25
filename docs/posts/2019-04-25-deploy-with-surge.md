@@ -14,4 +14,6 @@ date: '2019-04-25'
 그러면 자동으로 회원가입이 진행되고, 배포하려는 도메인을 입력하면 된다.
 이 도메인은 기본적으로 `*.surge.sh` 형식을 띄고 있는데, Custom domain을 적용하기 위해서는 [다음과 같은 절차](https://surge.sh/help/adding-a-custom-domain)를 수행한 후, deploy시 custom domain을 입력하면 된다.
 
+SSL도 기본적으로 지원하는데, domain을 입력할 때 https://만 앞에 붙여 주면 된다.
+
 서비스가 매우 간편하고 직관적이어서, static page를 배포하는 데는 아주 좋은 서비스인 것 같다.

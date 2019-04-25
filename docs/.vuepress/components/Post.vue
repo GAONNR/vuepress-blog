@@ -5,20 +5,17 @@
         <div slot="header" class="clearfix">
           <router-link :to="$page.path" class="post-link">
             <div>
-              <img
-                v-if="$page.frontmatter.image"
-                :src="$withBase($page.frontmatter.image)"
-                alt
-              />
+              <img v-if="$page.frontmatter.image" :src="$withBase($page.frontmatter.image)" alt>
             </div>
-            {{ $page.frontmatter.title }} <br />
+            {{ $page.frontmatter.title }}
+            <br>
             <span class="post-date">{{ $page.frontmatter.date }}</span>
           </router-link>
         </div>
-        <Content />
+        <Content/>
       </el-card>
     </el-row>
-    <disqus />
+    <disqus/>
   </div>
 </template>
 
