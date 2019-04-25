@@ -183,9 +183,18 @@ export default {
 
 #### Github pages로 배포하기
 
+--- 2019.04.25 수정 ---
+```
+해당 방법보다는 새 포스트의 Surge로 배포하기를 참고하시는 걸 추천드립니다.
+```
+
 `vuepress build docs` 명령어를 사용하면 `.vuepress/dist` 폴더 안에 빌드된 프로젝트 파일들이 생성되는데 (평상시에는 `vuepress dev docs` 명령어로 실시간 프리뷰와 디버깅을 할 수 있다), Github에서 지원하는 subtree 기능을 통해 같은 레포지토리에서 dist 폴더만을 깃허브 페이지를 통해 배포할 수 있다.
 
 Repository 안의 deploy.sh 파일을 제작하여 subtree push를 자동화하였다.
+
+#### Surge로 배포하기
+
+[포스트 링크](https://blog.g40n.xyz/posts/2019-04-25-deploy-with-surge.html)
 
 #### 소스 코드
 
