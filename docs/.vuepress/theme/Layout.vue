@@ -42,6 +42,14 @@ import Prism from 'prismjs';
 Vue.use(ElementUI, { locale });
 Vue.use(Prism);
 
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'UA-139141353-1');
+
 export default {
   data() {
     return {};
