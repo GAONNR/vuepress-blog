@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ParlAI를 활용한 챗봇 제작 스터디 -- (0) ParlAI가 무엇인지 알아보기
-category: Development
+category: Natural Language Processing
 date: "2020-07-20"
 ---
 
