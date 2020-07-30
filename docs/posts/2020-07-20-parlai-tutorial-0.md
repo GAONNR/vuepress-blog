@@ -2,7 +2,7 @@
 layout: post
 title: ParlAI를 활용한 챗봇 제작 스터디 -- (0) ParlAI가 무엇인지 알아보기
 category: Development
-date: '2020-07-20'
+date: "2020-07-20"
 ---
 
 ![parlai logo](https://parl.ai/docs/_static/img/parlai.png)
@@ -23,6 +23,8 @@ date: '2020-07-20'
 전체적인 프레임워크의 스타일이 _Pythonic_ 하다기 보다는 깐깐한 _OOP_ 느낌이다.
 (사실 파이써닉한게 뭔지 잘 모름)
 
+<!-- more -->
+
 다른 사람들은 모르겠지만 나는 프론트를 좀 했었다 보니 좀 상호작용할 수 있는 채팅으로부터 Top-down으로 프레임워크를 이해하는 게 마음에 들어서,
 ParlAI Docs에 있는 Using Chat Services부터 정리를 시작해 보려고 한다. (쓰고 보니 이 파트는 다음 포스트부터 다룰 것 같다)
 
@@ -32,10 +34,10 @@ ParlAI Docs에 있는 Using Chat Services부터 정리를 시작해 보려고 �
 
 일단 다음의 4가지 코어 콘셉트가 있다. 기본적으론 이렇고, 하려는 Task나 프로젝트에 따라서 개념이 더 추가될 수 있는 것 같다.
 
-* Agents
-* Messages
-* Teachers
-* Worlds
+- Agents
+- Messages
+- Teachers
+- Worlds
 
 ### Agents
 
@@ -49,6 +51,7 @@ ParlAI Docs에 있는 Using Chat Services부터 정리를 시작해 보려고 �
 두 번째는 `act(self)`로, 에이전트가 취할 action을 정한다. 만약 데이터셋을 읽어주는 에이전트라면, 이 에이전트의 act 함수는 다음 example batch를 보여주는 역할을 할 수 있을 것이고, 만약 뉴럴넷 에이전트라면 act함수에서 트레이닝을 하거나 evaluation을 할 수도 있을 것이다.
 
 ### Messages
+
 메시지는 말 그대로 메시지다. 메시지는 agent의 observe function에 전달되고, 또한 act function으로부터 반환된다.
 기본적으로 파이썬의 딕셔너리 구조를 가지고 있고, agent끼리의 커뮤니케이션에 사용된다.
 
@@ -63,6 +66,7 @@ Teacher는 조금 특별한 에이전트이다. `act`와 `observe` 함수를 구
 Dataset과 Task는 이 Teacher의 subclasss를 구현하여, 필요한 데이터를 다운로드하거나, 읽거나, 일부를 보여줄 수 있게 한다.
 
 ### Worlds
+
 World는 에이전트들이 상호 작용하는 환경이다. World 구현에는 `parley` 함수가 필수적이다(ParlAI의 발음; 프랑스어로 대화? 라는 뜻이라고 한다).
 `parley` 함수에는 한 번의 상호작용을 정의해 주어야 한다. 예를 들어, `DialogPartnerWorld`라는 task는 teacher와 student 에이전트의 대화로 이루어지는데,
 이 경우의 parley 함수는 다음과 같다:
@@ -75,6 +79,7 @@ teacher.observe(reply) # teacher가 student의 답변을 관찰하고 내부 sta
 ```
 
 ### Advanced Worlds
+
 이 부분은 공부를 하면서 업데이트해야할 부분인데, 월드의 확장 개념을 만듦으로써 더 다채로운 Task를 만들 수 있는 것 같다.
 이 분류에 속하는지는 모르겠지만, [3개의 separate task들을 OnboardWorld를 이용하여 연결한 코드](https://github.com/facebookresearch/ParlAI/blob/master/parlai/chat_service/tasks/overworld_demo/worlds.py)가 있는데, 복잡한 task를 만들 때 참고하기 좋은 개념인 것 같다.
 

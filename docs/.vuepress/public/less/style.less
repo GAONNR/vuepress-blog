@@ -32,7 +32,7 @@ a {
   text-align: center;
 }
 
-.blog-header > h1 {
+.blog-header>h1 {
   font-size: @header-text-size;
   color: @header-color;
   font-weight: 300;
@@ -82,6 +82,11 @@ pre {
   display: block;
 }
 
+.post iframe {
+  margin: 0 auto;
+  display: block;
+}
+
 .post i {
   color: @hazy-text-color;
 }
@@ -93,7 +98,7 @@ pre {
   box-shadow: @shadow;
 }
 
-p > code {
+p>code {
   background-color: @code-background-color;
   color: @inline-code-color;
   font-size: @code-text-size;
@@ -128,22 +133,28 @@ p > code {
   body {
     font-size: @main-text-size * @scale-const;
   }
+
   pre {
     font-size: @code-text-size * @scale-const;
   }
-  p > code {
+
+  p>code {
     font-size: @code-text-size * @scale-const;
     padding: 3px * @scale-const;
   }
+
   .post-link {
     font-size: (@main-text-size + 2) * @scale-const;
   }
+
   .post-date {
     font-size: @hazy-text-size * @scale-const;
   }
+
   .el-menu {
     margin: 0px;
   }
+
   .el-main {
     padding: 20px 0px;
   }
