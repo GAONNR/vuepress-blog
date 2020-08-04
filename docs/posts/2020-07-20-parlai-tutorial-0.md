@@ -25,7 +25,7 @@ date: "2020-07-20"
 
 <!-- more -->
 
-다른 사람들은 모르겠지만 나는 프론트를 좀 했었다 보니 좀 상호작용할 수 있는 채팅으로부터 Top-down으로 프레임워크를 이해하는 게 마음에 들어서,
+개인적으로 프론트를 만지작거린 전적이 있다 보니 좀 상호작용할 수 있는 채팅으로부터 Top-down으로 프레임워크를 이해하는 게 마음에 들어서,
 ParlAI Docs에 있는 Using Chat Services부터 정리를 시작해 보려고 한다. (쓰고 보니 이 파트는 다음 포스트부터 다룰 것 같다)
 
 먼저 [Intro to ParlAI](https://parl.ai/docs/tutorial_basic.html)를 보면서 ParlAI에 어떤 개념이 있는지부터 보고 시작하자.
@@ -81,7 +81,7 @@ teacher.observe(reply) # teacher가 student의 답변을 관찰하고 내부 sta
 ### Advanced Worlds
 
 이 부분은 공부를 하면서 업데이트해야할 부분인데, 월드의 확장 개념을 만듦으로써 더 다채로운 Task를 만들 수 있는 것 같다.
-이 분류에 속하는지는 모르겠지만, [3개의 separate task들을 OnboardWorld를 이용하여 연결한 코드](https://github.com/facebookresearch/ParlAI/blob/master/parlai/chat_service/tasks/overworld_demo/worlds.py)가 있는데, 복잡한 task를 만들 때 참고하기 좋은 개념인 것 같다.
+이 분류에 속하는지는 모르겠지만, [3개의 separate task들을 Overworld를 이용하여 연결한 코드](https://github.com/facebookresearch/ParlAI/blob/master/parlai/chat_service/tasks/overworld_demo/worlds.py)가 있는데, 복잡한 task를 만들 때 참고하기 좋은 개념인 것 같다.
 
 다음 포스트부터는 위에서 언급한 기본적인 채팅 서비스 구현을 따라가 보면서, 최종적으로 나만의 새로운 Task를 만들어 보려고 한다.
 
