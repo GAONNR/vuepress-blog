@@ -2,7 +2,7 @@
 layout: post
 title: ParlAI를 활용한 챗봇 제작 스터디 -- (1) 채팅 서비스가 어떻게 돌아가는지 알아보기
 category: Natural Language Processing
-date: "2020-07-20"
+date: "2020-07-30"
 ---
 
 ![parlai logo](https://parl.ai/docs/_static/img/parlai.png)
