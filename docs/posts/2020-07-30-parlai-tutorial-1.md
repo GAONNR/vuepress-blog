@@ -316,7 +316,8 @@ class MessengerChatTaskWorld(World):
 python run.py --config-path ../../tasks/chatbot/config.yml
 ```
 
-의 명령어를 입력해보면 테스트가 가능하다.
+의 명령어를 입력해보면 테스트가 가능하다. (실행 전에, ParlAI를 install해야 테스트가 가능할 수도 있다. ParlAI를 클론 받은 폴더로 들어가서,
+`pip install .`를 입력해 주자)
 
 다음에는 echo bot을 직접 구현해 보려고 하는데, 이번처럼 World에서 자체적으로 echo를 하는 것이 아닌
 echo agent를 추가해서 두 agent 간의 대화가 가능한 형식으로 해 보려고 한다.
