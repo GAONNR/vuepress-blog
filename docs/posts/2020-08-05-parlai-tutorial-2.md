@@ -7,7 +7,7 @@ date: "2020-08-05"
 
 > 이 글은 ParlAI 0.8.0 버전 기준으로 쓰여졌습니다. 이후 버전에서 변화되는 부분이 있을 수 있습니다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bFNAKvNY33w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NmJN0L2PdOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 이번 포스트에서는 Echo 챗봇을 구현해 볼 예정이다.
 이전 포스트에서 간단한 에코 챗봇 코드를 봤지만, 그 코드의 경우 엄밀히 말하면 Agent - Agent 간 대화가 아닌

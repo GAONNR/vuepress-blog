@@ -3,11 +3,11 @@ layout: post
 title: About
 ---
 
-<img class="profile-image" src="/images/about_me.jpg">
+<img class="profile-image" src="/images/about_me_ilco.jpg">
 
 #### School
 
-School of Computing, KAIST (Graduate: NLP\*CL Lab)  
+School of Computing, KAIST (NLP\*CL Lab, Master's Candidate)  
 School of Computing, KAIST (Undergraduate)  
 Gyeonggibuk Science High School
 
@@ -17,13 +17,11 @@ E-mail: <a href="mailto:gaon0403@gmail.com">gaon0403@gmail.com</a>
 
 #### Interests
 
-NLP, Web, Web hacking, Anime, VOCALOID, SC2
+NLP, Web, Web hacking
 
 <br clear="left">
 
-<i>Profile Image by Mika Pikazo.</i>
+<i> G40N = GAON = 김가온. </i>
 
-G40N = GAON = 김가온으로 부르시면 됩니다.
-
-KAIST 해킹 동아리 GoN에서 웹 해킹을 했었습니다.  
-요새는 Natural Language Processing 쪽을 공부하고 있습니다.
+KAIST의 해킹 및 동아리 GoN에서 웹 해킹을 위주로 공부했습니다.
+NLP\*CL 연구실에서 Natural Language Processing을 공부하고 있습니다.
